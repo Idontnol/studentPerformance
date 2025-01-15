@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Prediction</h1>
+        <form id="prediction-form" action="/predict" method="POST">
+            <label for="attendance">Attendance:</label>
+            <input type="number" id="attendance" name="attendance" step="0.01" required><br>
+
+            <label for="hours_studied">Hours Studied:</label>
+            <input type="number" id="hours_studied" name="hours_studied" step="0.01" required><br>
+
+            <label for="motivation_level">Motivation Level:</label>
+            <input type="number" id="motivation_level" name="motivation_level" step="0.01" required><br>
+
+            <label for="previous_scores">Previous Scores:</label>
+            <input type="number" id="previous_scores" name="previous_scores" step="0.01" required><br>
+
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

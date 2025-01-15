@@ -1,0 +1,10 @@
+streamlit
+librosa
+numpy
+pandas
+joblib
+scikit-learn
+altair
+xgboost
+matplotlib
+scikit-surprise
