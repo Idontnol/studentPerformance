@@ -103,6 +103,10 @@ def generate_recommendations(predicted_values, top_n=5):
 
 # Main app logic
 def main():
+    st.set_page_config(
+    page_title="Learn Metrics",
+    page_icon="./prediction.png",  # Replace with the path to your favicon fil
+)
     st.title("Student Performance Prediction with Recommendations")
     st.write("Enter the student's details below to predict their performance and get personalized recommendations.")
 
